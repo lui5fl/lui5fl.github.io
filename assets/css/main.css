@@ -1,0 +1,237 @@
+
+/* luisfl.me - v5 CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #333;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    color: #2593cf;
+    text-decoration: none;
+}
+
+/* Margins only set when needed */
+h2, h3, p {
+    margin: 0px;
+}
+
+/* Main grid with 2 columns: basic info and a list of things */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.main-grid > div {
+    padding: 0px 30px;
+}
+
+.main-grid .column-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2593cf;
+    color: #fefefe;
+    overflow-y: scroll;
+}
+
+.main-grid .column-2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #fefefe;
+    overflow-y: scroll;
+}
+
+.main-grid .column-1 > .content {
+    padding: 60px 0px;
+}
+
+.main-grid .column-1 .profile-picture {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.main-grid .column-1 .text {
+    margin-top: 30px;
+}
+
+.main-grid .column-1 .text .name {
+    font-size: 28px; 
+    font-weight: 700;
+    width: auto;
+    opacity: 0.95;
+    line-height: 1.0;
+}
+
+.main-grid .column-1 .text .subtitle {
+    font-weight: 600;
+    margin-top: 30px;
+    opacity: 0.85;
+    line-height: 1.1;
+}
+
+.main-grid .column-1 .text .subtitle-line-2 {
+    opacity: 0.7;
+}
+
+.main-grid .column-1 .text .subtitle-line-3 {
+    opacity: 0.55;
+}
+
+.desktop-ls {
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+.desktop-ls > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.45;
+}
+
+.main-grid .column-1 .mobile-ls {
+    display: none;
+}
+
+.main-grid .column-1 .mobile-ls > a {
+    display: block;
+    color: white;
+    margin: 0px auto;
+}
+
+.main-grid .column-2 > .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 45px;
+    margin: 60px 0px;
+}
+
+.main-grid .column-2 .section .title {
+    margin-bottom: 30px;
+}
+
+.main-grid .column-2 .section .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.main-grid .column-2 .item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-column-gap: 15px;
+    margin: 0px -3px;
+}
+
+.main-grid .column-2 .item .text .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main-grid .column-2 .item .text .subtitle {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.main-grid .column-2 .item .text .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.main-grid .column-2 .item .text .technologies {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.main-grid .column-2 .item .image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+
+    .main-grid .column-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .main-grid .column-1 .content {
+        grid-row: 1;
+    }
+
+    .main-grid .column-2 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .main-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .main-grid > div {
+        padding: 0px 20px;
+    }
+
+    .main-grid .column-1 > .content {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    .main-grid .column-1 .profile-picture {
+        width: 50%;
+        max-width: 150px;
+    }
+
+    .main-grid .column-1 .text .name {
+        font-size: 42px;
+    }
+
+    .main-grid .column-1 .text .subtitle {
+        font-size: 20px;
+    }
+
+    .main-grid .column-1 .desktop-ls {
+        display: none;
+    }
+
+    .main-grid .column-1 .mobile-ls {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        font-size: 24px;
+        opacity: 0.85;
+        margin-top: 40px;
+    }
+
+    .main-grid .column-2 > .content {
+        margin: 30px 0px;
+    }
+
+}
+
+/* 🎉 */
