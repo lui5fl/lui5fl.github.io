@@ -223,7 +223,7 @@ h2, h3, p {
 
     .main-grid .column-1 .mobile-ls {
         display: grid;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(3, auto);
         font-size: 24px;
         opacity: 0.85;
         margin-top: 40px;
