@@ -158,10 +158,9 @@ h2, h3, p {
     margin-bottom: 10px;
 }
 
-.main-grid .column-2 .item .text .technologies {
-    font-size: 12px;
-    color: #aaa;
-    text-transform: uppercase;
+.main-grid .column-2 .item .text .ls {
+    font-size: 14px;
+    color: #2593cf;
 }
 
 .main-grid .column-2 .item .image {
