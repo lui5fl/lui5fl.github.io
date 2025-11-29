@@ -1,0 +1,13 @@
+
+/* luisfl.me - Solyluna CSS */
+
+h2, a {
+    color: #FFE600;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #000;
+        color: #FFF;
+    }
+}
