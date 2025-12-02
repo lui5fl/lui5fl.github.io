@@ -1,242 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Luis Fariña Lázaro</title>
+		<meta name="author" content="Luis Fariña Lázaro">
+		<link href="https://mastodon.social/@luisfl" rel="me">
+		<link href="https://micro.blog/luis" rel="me">
 
-	<title>Luis Fariña</title>
-	<meta name="description" content="Luis Fariña's own webpage.">
-	<meta name="author" content="Luis Fariña">
-	<link href="https://micro.blog/luis" rel="me">
+		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 
-	<!-- CSS -->	
-	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+		<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+		<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="luisfl.me" />
+		<link rel="manifest" href="/assets/favicons/site.webmanifest" />
+	</head>
+	<body>
+		<header>
+			<h2>Luis <span class="secondary">Fariña Lázaro</span></h2>
+			<img id="me" src="./assets/images/me.png">
+		</header>
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png?v=501">
-	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png?v=501">
-	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png?v=501">
-	<link rel="manifest" href="./assets/favicons/site.webmanifest?v=501">
-	<meta name="msapplication-TileColor" content="#2d89ef">
-	<meta name="theme-color" content="#2593cf">
-
-</head>
-<body>
-
-	<div class="main-grid">
-
-		<!-- 1st column: basic info -->
-		<div class="column-1">
-
-			<!-- Column as margin -->
-			<div></div>
-
-			<!-- Content -->
-			<div class="content">
-				<img class="profile-picture" src="./assets/images/me.jpg" alt="Picture of myself">
-				<div class="text">
-
-					<!-- Brief description -->
-					<p class="name">Luis<br>Fariña</p>
-					<p class="subtitle">
-						iOS Engineer
-						<br>
-						<span class="subtitle-line-2">@ Nomasystems</span>
-						<br>
-						<span class="subtitle-line-3">from Spain</span>
-					</p>
-
-					<!-- Desktop-only links -->
-					<div class="desktop-ls">
-						<a href="https://github.com/lui5fl">GitHub</a>
-						<a href="https://linkedin.com/in/luisfl">LinkedIn</a>
-						<a href="https://mastodon.social/@luisfl" rel="me">Mastodon</a>
-					</div>
-
-					<!-- Mobile-only links -->
-					<div class="mobile-ls">
-						<a href="https://github.com/lui5fl"><i class="fab fa-github"></i></a>
-						<a href="https://linkedin.com/in/luisfl"><i class="fab fa-linkedin"></i></a>
-						<a href="https://mastodon.social/@luisfl" rel="me"><i class="fab fa-mastodon"></i></a>
-					</div>
-
-				</div>
+		<div class="project">
+			<img class="light-shadow" src="./assets/images/games/solyluna.png">
+			<div>
+				<h3>Solyluna</h3>
+				<p>Help the Sun reach the Moon by turning the light on and off to reveal elements.</p>
+				<p class="secondary"><i>Coming soon!</i></p>
 			</div>
-
 		</div>
 
-		<!-- 2nd column: work experience, projects... -->
-		<div class="column-2">
-			
-			<!-- Content -->
-			<div class="content">
-
-				<!-- Section: work -->
-				<div class="section">
-					<h3 class="title">Work</h3>
-
-					<div class="content">
-
-						<!-- Work: Nomasystems -->
-						<div class="item">
-							<img class="image" src="./assets/images/work/work-nomasystems.jpeg" alt="Nomasystems Logo">
-							<div class="text">
-								<p class="title">Nomasystems</p>
-								<p class="subtitle">iOS Engineer – Since October 2020</p>
-								<p class="description">Working on an e-commerce app for one of the largest clothing retailers in the world, downloaded by millions of people and used by thousands every day.</p>
-							</div>
-						</div>
-
-						<div style="width: 100%; height: 1px; background-color: #EEE"></div>
-
-						<!-- Work: Dinahosting -->
-						<div class="item">
-							<img class="image" src="./assets/images/work/work-dinahosting.png" alt="Dinahosting Logo">
-							<div class="text">
-								<p class="title">Dinahosting</p>
-								<p class="subtitle">Web Developer Intern – July to August 2019</p>
-								<p class="description">Created a PHP library and integrated it into an internal GraphQL API, authenticating requests with OAuth 2.0.</p>
-							</div>
-						</div>
-
-					</div>
-
+		<div class="project">
+			<img src="./assets/images/apps/hax.png">
+			<div>
+				<h3>Hax</h3>
+				<p>Read Hacker News on your iPhone, iPad, and Apple Watch, with features such as widgets and dark mode.</p>
+				<div class="lnks">
+					<a href="https://apps.apple.com/app/id1635164814">App Store</a>
+					<a href="https://github.com/lui5fl/hax">GitHub</a>
 				</div>
-
-				<!-- Section: apps -->
-				<div class="section">
-					<h3 class="title">Apps</h3>
-
-					<div class="content">
-
-						<!-- Apps: Hax -->
-						<div class="item">
-							<img class="image-without-border" src="./assets/images/apps/apps-hax.png" alt="Hax Logo">
-							<div class="text">
-								<p class="title">Hax</p>
-								<p class="subtitle">iOS App – Since May 2022</p>
-								<p class="description">Lightweight Hacker News client for iPhone, iPad and Apple Watch, built from the ground up using SwiftUI, with features such as widgets, filters, dark mode, and more.</p>
-								<p class="ls">
-									<a href="https://apps.apple.com/app/id1635164814">App Store</a>
-									<span>·</span>
-									<a href="https://github.com/lui5fl/hax">GitHub</a>
-								</p>
-							</div>
-						</div>
-
-						<!-- Apps: SF Search -->
-						<div class="item">
-							<img class="image-without-border" src="./assets/images/apps/apps-sf-search.png" alt="SF Search Logo">
-							<div class="text">
-								<p class="title">SF Search</p>
-								<p class="subtitle">iOS App – Since August 2024</p>
-								<p class="description">App for searching SF Symbols by drawing, leveraging Apple machine learning technologies such as the Create ML app and the Vision framework.</p>
-								<p class="ls">
-									<a href="https://apps.apple.com/app/id6738096244">App Store</a>
-								</p>
-							</div>
-						</div>
-
-						<!-- Apps: Wenland -->
-						<div class="item">
-							<img class="image" src="./assets/images/apps/apps-wenland.png" alt="Wenland Logo">
-							<div class="text">
-								<p class="title">Wenland</p>
-								<p class="subtitle">iOS, Android and Web App – Since February 2022</p>
-								<p class="description">App for meeting locals, joining travelers in their trips, and discovering new places. Developed together with a friend.</p>
-								<p class="ls">
-									<a href="https://apps.apple.com/app/id6738138927">App Store</a>
-									<span>·</span>
-									<a href="https://play.google.com/store/apps/details?id=com.wenland.Wenland">Google Play</a>
-									<span>·</span>
-									<a href="https://wenland.com">Website</a>
-								</p>
-							</div>
-						</div>
-
-						<!-- Apps: Movies And TV Shows -->
-						<div class="item">
-							<img class="image" src="./assets/images/apps/apps-movies-and-tv-shows.png" alt="Movies And TV Shows Logo">
-							<div class="text">
-								<p class="title">Movies And TV Shows</p>
-								<p class="subtitle">iOS App – Since March 2023</p>
-								<p class="description">Opinionated movie and TV show tracking app for iPhone built using UIKit, SwiftUI and Core Data, following the MVVM and Coordinator architectural patterns.</p>
-								<p class="ls">
-									<a href="https://github.com/lui5fl/movies-and-tv-shows">GitHub</a>
-								</p>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-				<!-- Section: education -->
-				<div class="section">
-					<h3 class="title">Education</h3>
-
-					<div class="content">
-
-						<!-- Education: University of Santiago de Compostela -->
-						<div class="item">
-							<img class="image" src="./assets/images/education/education-usc.png" alt="University of Santiago de Compostela Logo">
-							<div class="text">
-								<p class="title">University of Santiago de Compostela</p>
-								<p class="subtitle">B.Sc. in Computer Science – September 2016 to July 2020</p>
-								<p class="description">My senior thesis explored the concept of knowledge transfer between neural networks to address the problems involved in recognizing certain types of indoor scenes.</p>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-				<!-- Section: other -->
-				<div class="section">
-					<h3 class="title">Other</h3>
-
-					<div class="content">
-
-						<!-- Other: Apple WWDC Scholarships -->
-						<div class="item">
-							<img class="image" src="./assets/images/other/other-wwdc.jpg" alt="Apple Logo">
-							<div class="text">
-								<p class="title">Apple WWDC Scholarships</p>
-								<p class="subtitle">2018 and 2019</p>
-								<p class="description">Was awarded scholarships by Apple in both 2018 and 2019 to attend those years’ Worldwide Developers Conference events at San Jose, CA.
-								<p class="ls">
-									<a href="https://github.com/lui5fl">GitHub</a>
-								</p>
-							</div>
-						</div>
-
-						<!-- Other: GDG Pontevedra -->
-						<div class="item">
-							<img class="image" src="./assets/images/other/other-gdg.png" alt="GDG Pontevedra Logo">
-							<div class="text">
-								<p class="title">GDG Pontevedra</p>
-								<p class="subtitle">Co-organizer – March 2018 to January 2023</p>
-								<p class="description">Was part of the Google Developers Group at Pontevedra, Spain, which held programming-related events. The group helped organize events such as the 2018 and 2019 editions of GDG DevFest Galicia, with around 150 attendees each.</p>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
 			</div>
-
-			<!-- Column as margin -->
-			<div></div>
-
 		</div>
 
-	</div>
+		<div class="project">
+			<img src="./assets/images/apps/sf-search.png">
+			<div>
+				<h3>SF Search</h3>
+				<p>Search SF Symbols by drawing, browse the entire library, and keep track of your favorite symbols.</p>
+				<a href="https://apps.apple.com/app/id6738096244">App Store</a>
+			</div>
+		</div>
 
-	<!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/977d71db5a.js"></script>
+		<div class="project">
+			<img class="dark-shadow" src="./assets/images/apps/wenland.png">
+			<div>
+				<h3>Wenland</h3>
+				<p>Meet locals, join travelers in their trips, and discover new places. Developed together with a friend.</p>
+				<div class="lnks">
+					<a href="https://apps.apple.com/app/id6738138927">App Store</a>
+					<a href="https://play.google.com/store/apps/details?id=com.wenland.Wenland">Google Play</a>
+					<a href="https://wenland.com">Website</a>
+				</div>
+			</div>
+		</div>
 
-</body>
+		<footer>
+			<div class="lnks">
+				<a href="https://github.com/lui5fl">GitHub</a>
+				<a href="https://linkedin.com/in/luisfl">LinkedIn</a>
+			</div>
+			<div class="lnks">
+				<a href="mailto:contact@luisfl.me">contact@luisfl.me</a>
+			</div>
+		</footer>
+	</body>
 </html>
