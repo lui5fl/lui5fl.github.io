@@ -61,6 +61,10 @@ footer {
     width: 64px;
 }
 
+.project > picture > img {
+    width: 64px;
+}
+
 .project > div {
     display: flex;
     flex-direction: column;
